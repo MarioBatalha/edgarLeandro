@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Edgar Leandro</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+
+<body onload="startTime()">
+  <div class="bg-black">
+      <div class="card-logo">
+          <img src="img/logo.png" alt="Logo Edgar Leandro" class="logo-picture">
+      </div>
+      <div class="card-picture">
+          <img src="img/bg-picture.png" alt="EdgarLeandro" class="bg-picture">
+      </div>
+      <div class="graduation">
+          <h1>Especialista</h1>
+          <h2>Marketing</h2>
+        </div>
+
+        <div class="status">
+          <p>Profile</p>
+          <h1 >Perfil</h1>
+          <h2 class="text-historia">História</h2>
+          <h1>Carreira</h1>
+          <p class="familia">Famíla</p>
+        </div>
+
+        <div class="area">
+            <p class="politica">Política</p>
+            <h1>Comunicação</h1>
+            <h2>Política</h2>
+            <h2>Life</h2>
+
+        </div>
+        <div id="txt"></div>
+  </div>
+  <div class="bg-brown">
+      <h3 class="history">History</h3>
+      <h3 class="liderar">Liderar</h3>
+      <h3 class="mindset">Mindset</h3>
+      <h3 class="E">E</h3>
+    <div class="social-icons">
+        <ul class="list-unstyled text-center mb-0">
+          <li class="list-unstyled-item">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-unstyled-item">
+            <a href="https://www.linkedin.com/in/edgarleandrolst/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/coming-soon.min.js"></script>
+
+</body>
+
+</html>
